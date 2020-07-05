@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Usuarios con Fire Base</title>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  
+</head>
+<body>
+    <h3>REGISTRARSE COMO UN NUEVO USUARIO</h3>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Contraseña">
+    <br>
+    <button onclick="ingresarUsuario()">Agregar Usuario</button>
+
+    <br>
+    <h3 id="mensajeEstadoSesion">INGRESAR COMO USUARIO EXISTENTE</h3>
+    <input type="email" id="email2" placeholder="Email">
+    <input type="password" id="password2" placeholder="Contraseña">
+    <button onclick="ingresar()">Ingresar</button>
+    
+
+    
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDd7azWu5DCNTPLXZedwEAwQJPXSjS8f8o",
+            authDomain: "app-usuarios-4cd05.firebaseapp.com",
+            databaseURL: "https://app-usuarios-4cd05.firebaseio.com",
+            projectId: "app-usuarios-4cd05",
+            storageBucket: "app-usuarios-4cd05.appspot.com",
+            messagingSenderId: "1025066342645",
+            appId: "1:1025066342645:web:6a89c88f1a2345c9c6cdbc"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
