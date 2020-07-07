@@ -1,3 +1,6 @@
+
+//  CONFIGURACION CRUD PARA FIREBASE
+
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
     apiKey: "AIzaSyCvNIe0NEjtzU9jpNwpASPZ4nJM9Fqopuk",
